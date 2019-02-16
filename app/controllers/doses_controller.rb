@@ -1,8 +1,4 @@
 class DosesController < ApplicationController
-  # def new
-  #   @dose = Dose.new
-  # end
-
   def create
     @recipe = Recipe.find(params[:recipe_id])
     @dose = Dose.new(dose_params)
@@ -25,3 +21,4 @@ class DosesController < ApplicationController
     params.require(:dose).permit(:description, :ingredient_id)
   end
 end
+
