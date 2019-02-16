@@ -7,6 +7,7 @@ class DosesController < ApplicationController
       redirect_to recipe_path(@recipe)
     else
       render 'recipe/show'
+    end
   end
 
   def destroy
