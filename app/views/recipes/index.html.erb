@@ -1,0 +1,22 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+  <div class="container">
+    <h1>Julie's recipe book</h1>
+    <p>Find here my favorite recipes</p>
+  <%= link_to "Add a new recipe", new_recipe_path, class: "btn btn-flat" %>
+  </div>
+</div>
+
+
+
+<div class="cards">
+  <% @recipes.each do |recipe| %>
+<!--     <li> <%=recipe.title %> </li>
+    <img src="<%=recipe.picture%>" alt=""> -->
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=recipe.picture%>)">
+      <%=recipe.title.capitalize %>
+      <%= link_to "", recipe_path(recipe), class: 'card-link'%>
+    </div>
+  <% end %>
+</div>
+

@@ -3,3 +3,143 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Pacifico|Sacramento');
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+p {
+  font-family: 'Raleway', cursive;
+}
+
+h3 {
+  font-weight: lighter;
+  font-family: 'Sacramento', cursive;
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  // font-family: 'Lovers Quarrel', cursive;
+  // font-family: 'Sacramento', cursive;
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Raleway', cursive;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #800040;
+  transition: background 0.3s ease;
+  font-family: 'Raleway', cursive;
+}
+
+.container {
+  text-align:center;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+.card-link {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  background-size : 100px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.card-category {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  // font-family: 'Lovers Quarrel', cursive;
+  font-family: 'Sacramento', cursive;
+  // font-family: 'Pacifico', cursive;
+  font-size: 55px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,1);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  opacity : 0.9;
+  &:hover {
+    opacity : 1;
+  }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+
